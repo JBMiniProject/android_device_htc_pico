@@ -1,1 +1,1 @@
-HTC Explorer Device Configuration for CyanogenMod 10
+HTC Explorer Device Configuration for JB Mini Project

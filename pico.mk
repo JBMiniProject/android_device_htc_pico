@@ -25,7 +25,7 @@ PRODUCT_PACKAGES += \
     libstagefrighthw \
     libOmxCore \
     libI420colorconvert
-    
+
 # Graphics 
 PRODUCT_PACKAGES += \
     copybit.msm7x27a \
@@ -34,7 +34,7 @@ PRODUCT_PACKAGES += \
     libtilerenderer \
     libQcomUI \
     liboverlay
-    
+
 # Audio
 PRODUCT_PACKAGES += \
     audio.primary.msm7x27a \
@@ -51,11 +51,11 @@ PRODUCT_PACKAGES += \
     sensors.msm7x27a \
     gps.pico \
     power.msm7x27a
-       
+   
 # Camera
 PRODUCT_PACKAGES += \
     camera.default
-    
+
 # Misc
 PRODUCT_PACKAGES += \
     com.android.future.usb.accessory
@@ -83,7 +83,7 @@ PRODUCT_COPY_FILES += \
     device/htc/pico/files/init.pico.rc:root/init.pico.rc \
     device/htc/pico/files/ueventd.pico.rc:root/ueventd.pico.rc \
     device/htc/pico/files/init.pico.usb.rc:root/init.pico.usb.rc
-    
+
 # Camera
 PRODUCT_COPY_FILES += \
     vendor/htc/pico/proprietary/lib/hw/camera.default.so:system/lib/hw/camera.default.so \
@@ -100,7 +100,7 @@ PRODUCT_COPY_FILES += \
     vendor/htc/pico/proprietary/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
     device/htc/pico/prebuilt/etc/media_profiles.xml:system/etc/media_profiles.xml \
     device/htc/pico/prebuilt/etc/media_codecs.xml:system/etc/media_codecs.xml
-    
+
 # OMX
 PRODUCT_COPY_FILES += \
     device/htc/pico/prebuilt/lib/libmm-adspsvc.so:system/lib/libmm-adspsvc.so \
@@ -111,7 +111,7 @@ PRODUCT_COPY_FILES += \
     device/htc/pico/prebuilt/lib/libOmxVidEnc.so:system/lib/libOmxVidEnc.so \
     vendor/htc/pico/proprietary/lib/libmmparser_divxdrmlib.so:system/lib/libmmparser_divxdrmlib.so \
     vendor/htc/pico/proprietary/lib/libdivxdrmdecrypt.so:system/lib/libdivxdrmdecrypt.so
-    
+
 # Set usb type
 ADDITIONAL_DEFAULT_PROPERTIES += \
     persist.sys.usb.config=mass_storage \
@@ -120,7 +120,7 @@ ADDITIONAL_DEFAULT_PROPERTIES += \
 # Publish that we support the live wallpaper feature.
 PRODUCT_COPY_FILES += \
     packages/wallpapers/LivePicker/android.software.live_wallpaper.xml:/system/etc/permissions/android.software.live_wallpaper.xml
- 
+
 PRODUCT_PACKAGES += \
     LiveWallpapers \
     LiveWallpapersPicker \
@@ -131,10 +131,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
      device/htc/pico/releasetools/extras.sh:system/bin/extras.sh
 
-# Vold 
+# Vold
 PRODUCT_COPY_FILES += \
     device/htc/pico/files/etc/vold.fstab:system/etc/vold.fstab
-    
+
 # Wifi
 PRODUCT_COPY_FILES += \
     device/htc/pico/prebuilt/etc/firmware/fw_bcm4330_b2.bin:system/etc/firmware/fw_bcm4330_b2.bin \
@@ -143,7 +143,7 @@ PRODUCT_COPY_FILES += \
     device/htc/pico/files/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
     device/htc/pico/files/etc/dhcpd/dhcpcd.conf:system/etc/dhcpcd/dhcpcd.conf \
     device/htc/pico/files/etc/wifi/hostapd.conf:system/etc/wifi/hostapd.conf
-    
+
 # Audio
 PRODUCT_COPY_FILES += \
     device/htc/pico/prebuilt/etc/AudioFilter.csv:system/etc/AudioFilter.csv \
@@ -181,7 +181,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/htc/pico/prebuilt/lib/libhtc_ril.so:system/lib/libhtc_ril.so \
     device/htc/pico/prebuilt/lib/libqc-opt.so:system/lib/libqc-opt.so
-    
+
 # Audio DSP Profiles
 PRODUCT_COPY_FILES += \
     device/htc/pico/prebuilt/etc/soundimage/srs_global.cfg:system/etc/soundimage/srs_global.cfg \
@@ -211,7 +211,7 @@ PRODUCT_COPY_FILES += \
     device/htc/pico/prebuilt/usr/idc/synaptics-rmi-touchscreen.idc:system/usr/idc/synaptics-rmi-touchscreen.idc \
     device/htc/pico/prebuilt/usr/keylayout/AVRCP.kl:system/usr/keylayout/AVRCP.kl \
     device/htc/pico/prebuilt/usr/keylayout/qwerty.kl:system/usr/keylayout/qwerty.kl
-    
+
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.google.locationfeatures=1 \
     ro.com.google.networklocation=1 \
